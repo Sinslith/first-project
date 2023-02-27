@@ -1,0 +1,9 @@
+
+<div class="col-xs-8">
+<label for="dedomena">enter username</label>
+<!-- <input type="text"(input)="onUpdate($event)"> -->
+<input type="text" class="form-control" id="dedomena" [(ngModel)]="Username">
+
+<button type="button" class="btn btn-success" (click)="onCreateUser()" [disabled]="!Username">Create user</button>
+<p>{{Servername}}</p>
+</div>

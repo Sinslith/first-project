@@ -1,0 +1,7 @@
+
+<button type="button" class="btn btn-warning" (click)="onClick()">Display Details</button>
+<p *ngIf="displaySecret===true">Secret Password="tuna"</p>
+<div *ngFor="let x of log"
+[ngStyle]="{backgroundColor:x>=5?'blue':'white'}"
+[ngClass]="{'white-text':getWhite(x)}"
+>{{x}}</div>
